@@ -34,7 +34,7 @@ export class AppComponent  {
 
   createPost() {
     const data: Post = {
-      id: null,
+      id: 1,
       userId: 23,
       title: 'My New Post',
       body: 'Hello World!'
