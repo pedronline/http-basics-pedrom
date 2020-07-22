@@ -1,10 +1,17 @@
 <h1>Angular HTTP Basics</h1>
 
 <button (click)="getPosts()">Get Posts</button>
+<button (click)="getTodos()">Get Todos</button>
 
 <div *ngFor="let post of posts | async">
 
   {{ post | json }}
+
+</div>
+
+<div *ngFor="let todo of todos | async">
+
+  {{ todo | json }}
 
 </div>
 

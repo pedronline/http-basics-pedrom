@@ -31,6 +31,13 @@ export class AppComponent  {
     this.posts = this.http.get(this.ROOT_URL + '/posts', { params, headers })    
   }
 
+    getTodos() {
+    let params = new HttpParams().set('userId', '1');
+    let headers = new HttpHeaders().set('Authorization', 'auth-token');
+
+    this.posts = this.http.get(this.ROOT_URL + '/todos', { params, headers })    
+  }
+
 
   createPost() {
     const data: Post = {
